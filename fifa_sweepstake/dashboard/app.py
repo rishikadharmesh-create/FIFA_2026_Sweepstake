@@ -18,7 +18,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-from simulate import run_simulation
+from tournament_simulator import run_simulation
 from leaderboard import build_leaderboard, PRIZE_WEIGHTS
 from sensitivity_analysis import (
     recommend_n_sims, run_sensitivity_study,
