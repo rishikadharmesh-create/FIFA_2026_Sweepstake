@@ -19,7 +19,7 @@ import pandas as pd
 import plotly.express as px
 
 from tournament_simulator import run_simulation
-#from leaderboard import build_leaderboard, PRIZE_WEIGHTS
+from leaderboard import build_leaderboard, PRIZE_WEIGHTS
 from sensitivity_analysis import (
     recommend_n_sims, run_sensitivity_study,
     QUICK_N_SIMS_LIST, QUICK_N_REPEATS, DATA_DIR,
