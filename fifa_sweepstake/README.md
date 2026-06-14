@@ -14,7 +14,9 @@ fifa_sweepstake/
 │   ├── live_data.py           # Live fixtures/results via API-Football
 │   ├── prediction_model.py    # Elo -> match win/draw probability model
 │   ├── tournament_structure.py# Group draw + bracket structure (placeholder)
-│   ├── simulate.py            # Monte Carlo tournament simulator
+│   ├── tournament_simulator.py # Monte Carlo tournament simulator
+│   ├── sensitivity_analysis.py # Monte Carlo sensitivity / reliability study
+│   ├── update_elo_from_results.py # Applies completed-match results to Elo ratings
 │   └── leaderboard.py          # Maps team probs -> participant leaderboard
 ├── dashboard/
 │   └── app.py                  # Streamlit live dashboard
@@ -36,7 +38,7 @@ export API_FOOTBALL_KEY="your_key_from_api-football.com"
 
 ```bash
 # Quick CLI test
-python src/simulate.py
+python src/tournament_simulator.py
 python src/leaderboard.py
 
 # Full dashboard
