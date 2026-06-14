@@ -39,7 +39,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from simulate import run_simulation
+from tournament_simulator import run_simulation
 from leaderboard import build_leaderboard
 from tournament_structure import PARTICIPANT_TEAMS
 

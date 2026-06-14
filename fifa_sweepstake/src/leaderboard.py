@@ -49,7 +49,7 @@ def build_leaderboard(probs):
 
 
 if __name__ == "__main__":
-    from simulate import run_simulation
+    from tournament_simulator import run_simulation
     probs = run_simulation(n_sims=5000)
     lb = build_leaderboard(probs)
     print(f"{'Rank':<5}{'Name':<10}{'Teams':<45}{'Score':<8}")
