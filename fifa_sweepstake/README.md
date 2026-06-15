@@ -8,7 +8,7 @@ based on Elo ratings, with hooks for live results and sentiment analysis.
 ```
 fifa_sweepstake/
 ├── data/
-│   └── participants.py       # 16 participants & their 3 assigned teams
+│   └── sweepstake_participants.py  # 16 participants & their 3 assigned teams
 ├── src/
 │   ├── elo_data.py            # Elo ratings (seed data + live fetch stub)
 │   ├── live_data.py           # Live fixtures/results via API-Football
@@ -17,7 +17,7 @@ fifa_sweepstake/
 │   ├── tournament_simulator.py # Monte Carlo tournament simulator
 │   ├── sensitivity_analysis.py # Monte Carlo sensitivity / reliability study
 │   ├── update_elo_from_results.py # Applies completed-match results to Elo ratings
-│   └── leaderboard.py          # Maps team probs -> participant leaderboard
+│   └── sweepstake_leaderboard.py # Maps team probs -> participant leaderboard
 ├── dashboard/
 │   └── app.py                  # Streamlit live dashboard
 └── requirements.txt
@@ -39,7 +39,7 @@ export API_FOOTBALL_KEY="your_key_from_api-football.com"
 ```bash
 # Quick CLI test
 python src/tournament_simulator.py
-python src/leaderboard.py
+python src/sweepstake_leaderboard.py
 
 # Full dashboard
 streamlit run dashboard/app.py
