@@ -10,7 +10,7 @@ Since this isn't guaranteed stable, we provide:
 2. SEED_ELO -- a hand-curated fallback snapshot (approx ratings, mid-2026 form)
    so the rest of the pipeline always works offline.
 
-Name normalization maps team names from participants.py to the naming
+Name normalization maps team names from sweepstake_participants.py to the naming
 convention used by the Elo source.
 """
 

@@ -40,7 +40,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from tournament_simulator import run_simulation
-from leaderboard import build_leaderboard
+from sweepstake_leaderboard import build_leaderboard
 from tournament_structure import PARTICIPANT_TEAMS
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
