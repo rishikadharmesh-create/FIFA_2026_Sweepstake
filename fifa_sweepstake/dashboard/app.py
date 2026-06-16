@@ -26,7 +26,7 @@ from sensitivity_analysis import (
 )
 
 SENS_CSV = os.path.join(DATA_DIR, "sensitivity_results.csv")
-#GITHUB_REPO = rishikadharmesh-create/FIFA_2026_Sweepstake
+GITHUB_REPO = "rishikadharmesh-create/FIFA_2026_Sweepstake"
 
 st.set_page_config(page_title="FIFA 2026 Sweepstake Predictor", layout="wide")
 
